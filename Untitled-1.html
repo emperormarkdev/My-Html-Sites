@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>MTECH FORTE LIMITED</title>
+<meta name="description" content="MTECH FORTE LIMITED is a complete solution provider for offshore / onshore construction & installation, Inspection & Heavy Lifting, Civil Engineering & Construction Services and procurement / training. With operating centres in Nigeria" />
+<meta name="keywords" content="MTECH FORTE LIMITED, instrumentation, measurement & calibration, fabrication, pressure test, QAQC, load-out, MTECH FORTE">
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="MTECH FORTE LIMITED">
+<meta itemprop="description" content="MTECH FORTE LIMITED is a complete solution provider for offshore / onshore construction & installation, Inspection & Heavy Lifting, Civil Engineering & Construction Services and procurement / training. With operating centres in Nigeria">
+<meta itemprop="image" content="https://mtechforte.com.ng/images/favicon.jpg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@mtechforteng">
+<meta name="twitter:title" content="Services">
+<meta name="twitter:description" content="MTECH FORTE LIMITED is a complete solution provider for offshore / onshore construction & installation, Inspection & Heavy Lifting, Civil Engineering & Construction Services and procurement / training. With operating centres in Nigeria">
+<meta name="twitter:creator" content="@mtechforteng">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="https://mtechforte.com.ng/images/favicon.jpg">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Services" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mtechforte.com.ng/" />
+<meta property="og:image" content="https://mtechforte.com.ng/images/favicon.jpg" />
+<meta property="og:description" content="MTECH FORTE LIMITED is a complete solution provider for offshore / onshore construction & installation, Inspection & Heavy Lifting, Civil Engineering & Construction Services and procurement / training. With operating centres in Nigeria" />
+<meta property="og:site_name" content="Services" />
+<meta property="article:section" content="website" />
+<meta property="article:tag" content="MTECH FORTE LIMITED is a complete solution provider for offshore / onshore construction & installation, Inspection & Heavy Lifting, Civil Engineering & Construction Services and procurement / training. With operating centres in Nigeria" />
+
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!--Color Themes-->
+<!--<link href="css/color-themes/default-theme.css" rel="stylesheet">-->
+
+<!--Favicon-->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<script language="JavaScript" type="text/javascript">
+
+
+function contact(){
+    // Create our XMLHttpRequest object
+    var hr = new XMLHttpRequest();
+    // Create some variables we need to send to our PHP file
+    var url = "https://mtechforte.com.ng/sendcontact.php";
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var company = document.getElementById("company").value;
+    var service = document.getElementById("service").value; 
+    var message = document.getElementById("message").value;
+    
+
+    if (email == '' || message == '' || phone == "" || fname == "") {
+
+        document.getElementById("status").innerHTML = 'Please provide all required information. Thank you';
+    }else {
+        document.getElementById("signupbtn").style.display = "none";
+        var vars = "fname="+fname+"&lname="+lname+"&email="+email+"&phone="+phone+"&company="+company+"&service="+service+"&message="+message;
+    hr.open("POST", url, true);
+    // Set content type header information for sending url encoded variables in the request
+    hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // Access the onreadystatechange event for the XMLHttpRequest object
+    hr.onreadystatechange = function() {
+   if(hr.readyState == 4 && hr.status == 200) {
+   var return_data = hr.responseText;
+   
+   if(return_data != "success"){
+            document.getElementById("status").innerHTML = return_data;
+            document.getElementById("signupbtn").style.display = "block";
+        } else {
+                document.getElementById("mydivide").style.background == "white";
+                document.getElementById("mydivide").innerHTML = "<h2>Thank <b>"+fname+" "+lname+"</b> for contacting us.<br />Your message have been received, we will get back to you in a moment. </h2>";
+        }
+
+   }
+    }
+    // Send the data to PHP now... and wait for response to update the status div
+    hr.send(vars); // Actually execute the request
+    document.getElementById("status").innerHTML = 'Please Wait.. <img src="https://mtechforte.com.ng/preloader.gif" alt="Processing ...">';
+}
+
+}
+
+</script>
+</head>
+
+<body>
+<div class="page-wrapper">
+
+ 	
+    <!-- Main Header-->
+    <header class="main-header">
+    
+    	<!--Header Top-->
+    	<div class="header-top-one">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                    <div class="top-left">
+                        <ul class="clearfix">
+                        	<li style="color: #800080">MTECH FORTE offers customer specific fabrication, construction & support solutions</li>
+                        </ul>
+                    </div>
+                    <div class="top-right clearfix">
+                    	<ul class="clearfix">
+                        	<li>
+                            	<div class="social-links">
+                                    <a href="#"><span class="fa fa-facebook-f"></span></a>
+                                    <a href="#"><span class="fa fa-twitter"></span></a>
+                                    <!--<a href="#"><span class="fa fa-google-plus"></span></a>
+                                    <a href="#"><span class="fa fa-pinterest-p"></span></a>
+                                    <a href="#"><span class="fa fa-youtube"></span></a>-->
+                               	</div>
+                            </li>
+
+                        	<li class="language dropdown"><a class="btn btn-default dropdown-toggle" aria-haspopup="true" aria-expanded="true" href="https://mtechforte.com.ng/MTECH_Forte_Corporate_Profile_NG.pdf" target="blank" style="color: #ff0000"><span class="icon"><span class="fa fa-download"></span>&ensp; Download Profile <span class="icon fa fa-angle-down"></span></a>
+                               
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-outer">
+                    	<div class="logo"><a href="https://mtechforte.com.ng/"><img src="https://mtechforte.com.ng/images/logo.png" alt="MTECH FORTE Logo" title="MTECH FORTE LIMITED Logo"></a></div>
+                    </div>
+                    
+                    <div class="pull-right upper-right clearfix">
+                    	
+                        <!--Info Box-->
+                        <div class="upper-column info-box">
+                        	<img src="images/iso.png" alt="MTECH FORTE ISO Certification">
+                        </div>
+                        
+                        <!--Info Box-->
+                        <div class="upper-column info-box">
+                        	<div class="icon-box"><span class="flaticon-technology-2"></span></div>
+                            <ul>
+                            	<li><strong>+234 080 3767 4583</strong></li>
+                                <li style="text-transform: none;">info@mtechforte.com.ng</li>
+                            </ul>
+                        </div>
+                        
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+        <!--Header Lower-->
+        <div class="header-lower">
+            
+        	<div class="auto-container">
+            	<div class="nav-outer clearfix">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="current "><a href="https://mtechforte.com.ng/">Home</a></li>
+                                <li class="dropdown"><a href="https://mtechforte.com.ng/about.mtechforte">About us</a>
+                                    <ul>
+                                    	<li><a href="https://mtechforte.com.ng/about.mtechforte">About</a></li>
+                                        <li><a href="https://mtechforte.com.ng/our.faq">Faq</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="https://mtechforte.com.ng/mtechforte.services">Services</a>
+                                    <ul>
+                                    	<li><a href="https://mtechforte.com.ng/mtechforte.services">All Services</a></li>
+                                        <li><a href="https://mtechforte.com.ng/service/13/commercial--industrial-building-construction-services">Commercial / Industrial Building Construction Services</a></li><li><a href="https://mtechforte.com.ng/service/6/corrosion-control--painting-services">Corrosion Control & Painting Services</a></li><li><a href="https://mtechforte.com.ng/service/4/electrical-engineering-services">Electrical Engineering Services</a></li><li><a href="https://mtechforte.com.ng/service/1/engineering-design--consultancy">Engineering Design & Consultancy</a></li><li><a href="https://mtechforte.com.ng/service/8/hvac-installation--maintenance-services-">HVAC Installation & Maintenance Services </a></li><li><a href="https://mtechforte.com.ng/service/9/inspection--integrity-management">Inspection & Integrity Management</a></li><li><a href="https://mtechforte.com.ng/service/5/instrumentation--control-services">Instrumentation & Control Services</a></li><li><a href="https://mtechforte.com.ng/service/7/insulation--cladding--services">Insulation & Cladding  Services</a></li><li><a href="https://mtechforte.com.ng/service/2/pipeline-construction-services">Pipeline Construction Services</a></li><li><a href="https://mtechforte.com.ng/service/3/plant-maintenance-services">Plant Maintenance Services</a></li>                                    </ul>
+                                </li>
+                                <li class=""><a href="#">Project References</a></li>
+                                
+                                <li><a href="https://mtechforte.com.ng/our.blog">Blog / News</a></li>
+                                <li class="dropdown"><a href="https://mtechforte.com.ng/contact.mtechforte">Contact Us</a>
+
+                                <ul>
+                                        <li><a href="https://mtechforte.com.ng/contact.mtechforte">Contact Us</a></li>
+                                        <li><a href="https://mtechforte.com.ng/get.quote">Request a Quote</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                    <div class="outer-box">
+                    	<!--Search Box-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                            <form method="post" action="#">
+                                                <div class="form-group">
+                                                    <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Lower-->
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="https://mtechforte.com.ng/" class="img-responsive"><img src="https://mtechforte.com.ng/images/logo-small.png" alt="MTECH FORTE Logo" title="MTECH FORTE LIMITED"></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class=""><a href="https://mtechforte.com.ng/">Home</a></li>
+                                <li class="dropdown"><a href="https://mtechforte.com.ng/about.mtechforte">About us</a>
+                                    <ul>
+                                    	<li><a href="https://mtechforte.com.ng/about.mtechforte">About</a></li>
+                                        <li><a href="https://mtechforte.com.ng/our.faq">Faq</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="https://mtechforte.com.ng/mtechforte.services">Services</a>
+                                    <ul>
+                                    	<li><a href="https://mtechforte.com.ng/mtechforte.services">All Services</a></li>
+                                        <li><a href="https://mtechforte.com.ng/service/13/commercial--industrial-building-construction-services">Commercial / Industrial Building Construction Services</a></li><li><a href="https://mtechforte.com.ng/service/6/corrosion-control--painting-services">Corrosion Control & Painting Services</a></li><li><a href="https://mtechforte.com.ng/service/4/electrical-engineering-services">Electrical Engineering Services</a></li><li><a href="https://mtechforte.com.ng/service/1/engineering-design--consultancy">Engineering Design & Consultancy</a></li><li><a href="https://mtechforte.com.ng/service/8/hvac-installation--maintenance-services-">HVAC Installation & Maintenance Services </a></li><li><a href="https://mtechforte.com.ng/service/9/inspection--integrity-management">Inspection & Integrity Management</a></li><li><a href="https://mtechforte.com.ng/service/5/instrumentation--control-services">Instrumentation & Control Services</a></li><li><a href="https://mtechforte.com.ng/service/7/insulation--cladding--services">Insulation & Cladding  Services</a></li><li><a href="https://mtechforte.com.ng/service/2/pipeline-construction-services">Pipeline Construction Services</a></li><li><a href="https://mtechforte.com.ng/service/3/plant-maintenance-services">Plant Maintenance Services</a></li>                                    </ul>
+                                </li>
+                                <li class=""><a href="#">Project References</a></li>
+                                
+                                <li><a href="https://mtechforte.com.ng/our.blog">Blog / News</a></li>
+                                <li class="dropdown"><a href="https://mtechforte.com.ng/contact.mtechforte">Contact Us</a>
+
+                                <ul>
+                                        <li><a href="https://mtechforte.com.ng/contact.mtechforte">Contact Us</a></li>
+                                        <li><a href="https://mtechforte.com.ng/get.quote">Request a Quote</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    
+    </header>
+    <!--End Main Header -->        
+          
+    <!--Main Slider-->
+    <section class="main-slider">
+    	
+        <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_three_wrapper" data-source="gallery">
+            <div class="rev_slider fullwidthabanner" id="rev_slider_three" data-version="5.4.1">
+                <ul>
+                	
+                    
+                    
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="

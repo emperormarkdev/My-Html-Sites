@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Chukwudi - Graphic Designer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0, #000);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #0f0;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 20px 0 10px;
+        }
+        .typing {
+            overflow: hidden;
+            border-right: .15em solid #0f0;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #0f0; }
+        }
+        .icons i {
+            font-size: 24px;
+            margin: 10px;
+        }
+        a {
+            color: #0f0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            background: #0f0;
+            border: none;
+            padding: 10px 20px;
+            color: #000;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 15px 0;
+        }
+        button:hover {
+            background: #0c0;
+        }
+        footer {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="profile.jpg" alt="Mark Chukwudi">
+        <h1>Mark Chukwudi</h1>
+        <p class="typing">Graphics Designer with 5+ years of experience</p>
+
+        <div class="icons">
+            <i class="fa-brands fa-adobe"></i> Adobe Photoshop 
+            <i class="fa-brands fa-adobe"></i> Adobe Illustrator 
+            <i class="fa-solid fa-paintbrush"></i> Canva 
+        </div>
+
+        <button onclick="window.location.href='https://drive.google.com/file/d/1It_pUqzbxjxfBJB0yBCwB7hHrQWQlH2i/view?usp=drivesdk'">
+            Download Resume
+        </button>
+
+        <p>
+            <a href="https://wa.me/2349040447548" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> |
+            <a href="https://www.behance.net/chukwudimark1" target="_blank"><i class="fa-brands fa-behance"></i> Behance</a> |
+            <a href="https://www.upwork.com/freelancers/~01f45c0c63b6171050" target="_blank"><i class="fa-brands fa-upwork"></i> Upwork</a>
+        </p>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i> emperormarktech@gmail.com
+        </p>
+
+        <footer>
+            Developed by <a href="https://wa.me/2349040447548" target="_blank">emperormark</a>
+        </footer>
+    </div>
+
+</body>
+</html>
